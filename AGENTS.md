@@ -13,7 +13,9 @@ so when you are wrong the comment is wrong with you. Demonstrate instead of desc
 
 ## How to work
 
-One item at a time. Show the diff and wait before applying the next.
+One item at a time. Show me the diff and wait before applying the next. I read it for scope
+rather than for correctness: which files moved and how much. Correctness gets settled by
+running something.
 
 Proposal before code for anything with a surface: a command, a flag, an API, a schema. Show
 me the surface and wait. Arguing about an approach is cheaper than arguing about an
@@ -22,7 +24,8 @@ implementation.
 State the acceptance condition for a step before starting it. If you cannot state it, the
 step is not ready and you should ask instead.
 
-No diff larger than I can review in one pass. Code I cannot review is code I cannot own.
+Keep a change small enough that one behavior check tells me whether it worked. If a failure
+could have several causes, the change was too big.
 
 Say which directory you are in before acting, and challenge it if it looks wrong for what
 was asked. Similar names and sibling checkouts are easy to act in by mistake and expensive
